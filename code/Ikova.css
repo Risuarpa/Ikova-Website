@@ -1,0 +1,871 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* list-style-type: none; */
+}
+
+body, html {
+    background: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    background: #0b1724;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+
+.logo img {
+    max-width: 45px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+.navbar a:hover {
+    color: #2772c2;
+}
+
+/* HERO SECTION */
+
+.container-hero {
+    background: url(/assets/header\ ikova.jpg), no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4%;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container-hero::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+}
+
+.deskripsi {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    color: white;
+    top: -2rem;
+    text-align: left;
+}
+
+.deskripsi h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.deskripsi span {
+    color: rgb(4, 186, 241);    
+}
+
+.deskripsi p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+/* ABOUT SECTION */
+
+#tentangkami {
+    scroll-margin-top: 60px;
+}
+
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5%;
+}
+
+.container-about  i  {
+    color: #1d3857;
+    font-size: 4rem;
+}
+
+.tittle-about {
+    text-align: center;
+}
+
+.tittle-about h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 3rem;
+}
+
+.tittle-about span {
+    color: rgba(6, 48, 86);
+}
+
+.content-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #1d3857;
+    padding: 20px;
+    margin-bottom: 3rem;
+    min-height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-about img {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.deskripsi-about i {
+    background: #800000;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.deskripsi-about h6 {
+    font-family: "Work-sans", sans-serif;
+    color: #0077B6;
+    font-size: 1rem;
+}
+
+.deskripsi-about h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5  rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.deskripsi-about p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}   
+
+/* CONTENT ABOUT 2 */
+
+.container-about-2 {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.container-about-2 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: rgb(13, 55, 69, 0.9);
+    text-align: center;
+}
+
+.content-about-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1d3857;
+    padding: 20px;
+    margin-bottom: 3rem;
+    min-height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-about-2 img {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.deskripsi-about-2 i {
+    background: #2C6E5F;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.deskripsi-about-2 h6 {
+    font-family: "Work-sans", sans-serif;
+    color: #0077B6;
+    font-size: 1rem;
+}
+
+.deskripsi-about-2 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.deskripsi-about-2 p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}   
+
+/* CONTENT ABOUT 3 */
+
+.container-about-3 {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.container-about-3 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: rgb(13, 55, 69, 0.9);
+    text-align: center;
+}
+
+.content-about-3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1d3857;
+    padding: 20px;
+    margin-bottom: 3rem;
+    min-height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-about-3 img {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.deskripsi-about-3 i {
+    background: #4A6B8C;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.deskripsi-about-3 h6 {
+    font-family: "Work-sans", sans-serif;
+    color: #0077B6;
+    font-size: 1rem;
+}
+
+.deskripsi-about-3 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.deskripsi-about-3 p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}   
+
+/* CONTENT ABOUT 4 */
+
+.container-about-4 {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.container-about-4 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: rgb(13, 55, 69, 0.9);
+    text-align: center;
+}
+
+.content-about-4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1d3857;
+    padding: 20px;
+    margin-bottom: 3rem;
+    min-height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-about-4 img {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.deskripsi-about-4 i {
+    background: #40A1A8;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.deskripsi-about-4 h6 {
+    font-family: "Work-sans", sans-serif;
+    color: #0077B6;
+    font-size: 1rem;
+}
+
+.deskripsi-about-4 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.deskripsi-about-4 p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}   
+
+/* ORANG BERPENGALAMAN */
+
+.orang i {
+    font-size: 4rem;
+    color: rgba(6, 48, 86);
+}
+.tittle-orang {
+    text-align: center;
+}
+
+.tittle-orang h1 {
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.tittle-orang span {
+    color:rgb(6, 48, 86);
+}
+
+.tittle-orang p {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+}
+
+.container-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15%;
+}
+
+.container-team img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-orang {
+    font-family: "Ubuntu", sans-serif;
+    background: #111;
+    padding: 30px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+.card-orang h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-orang h6 {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card-orang p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* PERUSAHAAN KAMI*/
+
+.container-company{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-content: flex-start;
+    margin-top: 6rem;
+    padding: 0 10%;
+}
+
+.img-company img {
+    width: 80%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 30px;
+}
+
+.deskripsi-company h6 {
+    font-family: "Poppins", sans-serif;
+    color: #0077B6;
+    font-size: 1rem;
+}
+
+.deskripsi-company h1 {
+    font-family: "Work-sans", sans-serif;
+    font-size: 2rem;
+    color: black;   
+}
+
+.deskripsi-company p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
+} 
+
+.lihat-selanjutnya {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    background: #34659e;
+    padding: 7px;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.lihat-selanjutnya:hover {
+    transform: scale(0.97);
+}
+
+.lihat-selanjutnya i {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+/* VISI DAN MISI */
+
+#tittle-vimi {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container-vimi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 30px;
+}
+
+.card-visi {
+    background: #1d3857;       
+    margin-top: 6%;
+    max-width: 350px;
+    height: 200px;
+    text-align: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.icon-vimi i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.card-visi h1 {
+    font-family: "Work-sans", sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card-visi p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+/* MISI */
+
+.card-misi {
+    background: #1d3857;       
+    margin-top: 6%;
+    max-width: 350px;
+    text-align: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px
+}
+
+.icon-vimi i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.card-misi h1 {
+    font-family: "Work-sans", sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card-misi p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+.card-misi ol {
+    font-family: "Lato", sans-serif;
+    list-style: decimal;
+    color: white;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+/* TUJUAN */
+
+.card-tujuan {
+    background: #1d3857;       
+    margin-top: 6%;
+    max-width: 350px;
+    height: 200px;
+    text-align: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.icon-tujuan i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.card-tujuan h1 {
+    font-family: "Work-sans", sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card-tujuan p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* COSTUMER */
+
+.container-text {
+    margin-top: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(9, 90, 171);
+}
+
+.cta-jelajahi {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(0, 132, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    width: 220px;
+    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-jelajahi i {
+    color: rgb(236, 236, 236);
+    background: transparent;
+    border: 2px solid;
+    border-radius:  50%;
+    font-size: 1.3rem;
+    padding:  8px;
+    margin-right: 10px;
+}
+
+.cta-jelajahi span {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cta-jelajahi:hover {
+    transform: scale(0.95); 
+    background: rgb(245, 110, 0);
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 4rem;
+    background: #0b1724;
+    color: white;
+    padding: 40px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 120px;
+}
+
+.img-logo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-tengah {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+}
+
+.footer-tengah a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* NAVBAR  RESPONSIF */
+
+/* @media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background:rgba(6, 48, 86);
+        flex-direction: column;
+        align-items:  flex-start;
+        padding:  20px;
+        gap:  10px;
+        padding: 20px;
+        width:  80%;
+        display: none;
+        border-radius: 8px;
+    }
+
+    .navbar.active {
+        display:  none;
+    }
+
+    .menu-toggle{
+        display:  block;
+    }
+} */
+
+/* HERO SECTION RESPONSIF */
+
+@media (max-width: 480px) {
+    .container-hero {
+        padding-left: 8px;
+        align-items: center;
+        justify-content: center;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .deskripsi {
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .deskripsi h1 {
+        font-size: 2rem;
+    }
+
+    .deskripsi p{
+        font-size: 1rem;
+    }
+}
+
+/* ABOUT SECTION RESPONSIF */
+
+@media (max-width: 480px) {
+    .content-about img,
+    .content-about-2 img,
+    .content-about-3 img,
+    .content-about-4 img {
+        display: none;
+    }
+
+    .content-about,
+    .content-about-2,
+    .content-about-3,
+    .content-about-4 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ORANG BERPENGALAMAN RESPONSIF */
+
+@media (max-width: 480px) {
+    .orang i {
+        font-size: 2.4rem;
+    }
+
+    .tittle-orang h1 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .tittle-orang p {
+        display: none;
+    }
+
+    .container-team {
+        flex-direction: row;
+    }
+
+    .container-team img {
+        display: none;
+    }
+
+    .card-orang {
+        width: 400px;
+    }
+}
+
+
+/* PERUSAHAAN KAMI RESPONSIF*/
+
+@media (max-width: 480px) {
+    .container-company {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .deskripsi.company p {
+        margin: 0;
+    }
+
+    .lihat-selanjutnya {
+        display: none;
+    }
+    
+}
+
+/* VISI DAN MISI RESPONSIF */
+
+@media (max-width: 480px) {
+    .container-vimi {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-visi,
+    .card-tujuan {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+    }
+
+    .card-misi {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+/* COSTUMER RESPONSIF */
+
+@media (max-width: 480px) {
+    .container-text {
+        font-size: 1.3rem;
+    }
+}

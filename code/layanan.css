@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+body, html {
+    background: #ffffff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    background: #0b1724;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+
+.logo img {
+    max-width: 45px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+.navbar a:hover {
+    color: #2772c2;
+}
+
+/* HERO SECTION */
+
+.container-hero {
+    background: linear-gradient(#298eed, #ffffff);
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    padding-left: 4%;
+}
+
+.content-hero img  {
+    max-width: 55%;
+    height: auto;
+}
+
+.content-hero {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.text-hero h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #0b1724;
+}
+
+.text-hero h2  {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+    color: #0b1724;
+}
+
+.text-hero span {
+    color: #3384da;
+}
+
+.text-hero p {
+    font-family: "Lato", sans-serif;
+    color: rgb(129, 129, 129);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* CARD KETENTUAN */
+
+.container-card  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateY(-6rem);
+}
+
+.card  {
+    gap: 40px;
+    background: rgb(5, 12, 31);
+    max-width: 240px;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(7, 16, 69, 0.5);
+}
+
+.card h1  {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.card i {
+    color: white;
+    font-size: 3rem;
+}
+
+.card p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+/* CARA MENGGUNAKAN JASA KAMI */
+
+#layanan {
+    scroll-margin-top: 100px;
+}
+
+.tittle-cara {
+    font-family: "Ubuntu", sans-serif;
+    padding-left: 80px;
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.container-cara {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 80px;
+    background:  #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.container-img {
+    position: absolute;
+    left: 50%;
+    right: 30px;
+    transform: translateY(-100%); 
+    height: auto; 
+}
+
+.img-cara {
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.content-cara i {
+    font-size: 3rem;
+    color: rgb(15, 92, 101);
+}
+
+.content-cara h6 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}   
+
+.content-cara p {
+    font-family: "Lato", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.container-cara .tittle-cara-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* HARGA BRONZE */
+
+.tittle-harga {
+    text-align: center;
+}
+
+.tittle-harga span {
+    color:rgba(12, 107, 185);
+}
+
+.tittle-harga  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 4rem 0;
+}
+
+.container-harga {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}   
+
+.card-harga {
+    background: #1E90FF;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+}
+
+.card-harga i {
+    color: brown;
+    font-size: 2rem;
+}
+
+.card-harga h2 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-harga p {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.list-kualitas ol {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    text-align: start;
+    color: white;
+}
+
+.list-kualitas li {
+    display: flex;
+    align-items: center;
+}
+
+.list-kualitas i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.list-kualitas  i.benar {
+    color: green;
+}
+
+.list-kualitas i.salah {
+    color: red;
+}
+
+.btn-harga {
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    background: rgba(10, 85, 147);
+    color: white;
+    font-size:  1.2rem;
+    padding: 5px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+
+.btn-harga:hover {
+    background: rgb(12, 107, 185);
+}
+
+/* HARGA SILVER */
+
+.card-harga-sl {
+    background: #1E90FF;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+}
+
+.card-harga-sl i {
+    color: silver;
+    font-size: 2rem;
+}
+
+.card-harga-sl h2 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-harga-sl p {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.list-kualitas-sl ol {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    text-align: start;
+    color: white;
+}
+
+.list-kualitas-sl li {
+    display: flex;
+    align-items: center;
+}
+
+.list-kualitas-sl i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.list-kualitas-sl  i.benar {
+    color: green;
+}
+
+.list-kualitas-sl i.salah {
+    color: red;
+}
+
+.btn-harga {
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    background: rgba(10, 85, 147);
+    color: white;
+    font-size:  1.2rem;
+    padding: 5px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+
+.btn-harga:hover {
+    background: rgb(12, 107, 185);
+}
+
+/* HARGA DM */
+
+.card-harga-dm {
+    background: #1E90FF;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+}
+
+.card-harga-dm i {
+    color: gold;
+    font-size: 3rem;
+}
+
+.card-harga-dm h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+}
+
+card-harga-dm p {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.text-harga-dm {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+.harga-ori-dm {
+    text-decoration: line-through;
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.list-kualitas-dm ol {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    text-align: start;
+    color: white;
+    margin-top: 1rem;
+}
+
+.list-kualitas-dm li {
+    display: flex;
+    align-items: center;
+}
+
+.list-kualitas-dm i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.list-kualitas-dm  i.benar {
+    color: green;
+}
+
+.list-kualitas-dm i.salah {
+    color: red;
+}
+
+.btn-harga-dm {
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+    background: rgba(10, 85, 147);
+    color: white;
+    font-size:  1.2rem;
+    padding: 5px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+
+.btn-harga-dm:hover {
+    background: rgb(12, 107, 185);
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 4rem;
+    background: #0b1724;
+    color: white;
+    padding: 40px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 120px;
+}
+
+.img-logo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-tengah {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+}
+
+.footer-tengah a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* HERO SECTION RENSPOSIF */
+
+@media (max-width: 480px) {
+    .content-hero img {
+        display: none;
+    }
+
+    .text-hero {
+        margin-top: -10rem;
+        text-align: center;
+    }
+
+    .text-hero h6 {
+        font-size: 2.5rem;
+    }
+
+    .text-hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-hero p {
+        display:  none;
+    }
+}
+
+
+/* CARD KETENTUAN RESPONSIF */
+
+@media (max-width: 480px) {
+    .container-card {
+        position: static;
+        flex-direction: column;
+        margin-top: -4rem;
+    }
+}
+
+/* CARA MENGGUNAKAN JASA KAMI RESPONSIF */
+
+@media (max-width: 480px) {
+    .tittle-cara {
+        font-size: 2.4rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .img-cara {
+        display: none;
+    }
+
+    .container-cara {
+        min-height: 200px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .tittle-harga h1 {
+        font-size: 2,3rem;
+    }
+    .container-harga {
+        flex-direction: column;
+    }
+
+    .card-harga-dm {
+        max-width: 320px;
+    }
+    .text-harga-dm {
+        font-size: 2rem;
+    }
+}
